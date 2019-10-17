@@ -16,7 +16,7 @@ process.stdin.on('readable', function(){
                 process.stdin.resume();
                 break;
             case '/lang_Node':
-                process.stdout.write('Lang: ' + process.env.lang + '\n');
+                process.stdout.write('Lang: ' + process.env.LANG + '\n');
                 process.stdin.resume();
                 break;
             case '/getOSinfo':
